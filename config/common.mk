@@ -189,7 +189,6 @@ PRODUCT_PACKAGES += \
     htop \
     mkfs.ntfs \
     fsck.ntfs \
-    mount.ntfs \
     gdbserver \
     micro_bench \
     oprofiled \
@@ -222,7 +221,6 @@ WITH_EXFAT ?= true
 ifeq ($(WITH_EXFAT),true)
 TARGET_USES_EXFAT := true
 PRODUCT_PACKAGES += \
-    mount.exfat \
     fsck.exfat \
     mkfs.exfat
 endif
